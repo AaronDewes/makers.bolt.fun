@@ -112,7 +112,13 @@
           "import/no-anonymous-default-export": "off"
         }
       }
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "off",
+      "no-unused-vars": "off",
+      "react/jsx-pascal-case": "off",
+      "no-useless-escape": "off"
+    }
   },
   "browserslist": {
     "production": [
