@@ -1,7 +1,16 @@
 import { QueryResult } from "@apollo/client";
 import { useCallback, useState } from "react";
+import { Exact, InputMaybe } from "src/graphql";
 
-export const useInfiniteQuery = (query: QueryResult, dataField: string) => {
+export const useInfiniteQuery = (query: QueryResult | QueryResult<
+    any,
+    Exact<{
+      take: InputMaybe<number>;
+      skip: InputMaybe<number>;
+      sortBy: InputMaybe<string>;
+      topic: InputMaybe<number>;
+    }>
+  >, dataField: string) => {
     const [fetchingMore, setFetchingMore] = useState(false)
     const [reachedLastPage, setReachedLastPage] = useState(false)
 
