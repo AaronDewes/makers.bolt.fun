@@ -30,3 +30,11 @@ yarn-debug.log*
 yarn-error.log*
 
 TODO
+
+# Yarn 3
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
