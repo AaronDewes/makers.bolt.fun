@@ -11,7 +11,7 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app"
   ],
-  "framework": "@storybook/react",
+  "framework": "@storybook/react-webpack5",
   "core": {
     "builder": "@storybook/builder-webpack5"
   }
