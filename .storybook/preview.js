@@ -1,4 +1,4 @@
-import { configure, addDecorator, addParameters } from "@storybook/react";
+import { configure } from "@storybook/react";
 import { WrapperDecorator, AppDecorator } from 'src/utils/storybook/decorators'
 
 
@@ -10,14 +10,6 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
-
-addDecorator(AppDecorator);
-
-addDecorator(WrapperDecorator);
-
-
-addParameters({
   backgrounds: {
 
     default: 'light',
@@ -32,7 +24,6 @@ addParameters({
       },
     ],
   }
-});
+}
 
-
-configure(require.context("../src", true, /\.stories\.ts$/), module);
+export const decorators = [AppDecorator, WrapperDecorator];
