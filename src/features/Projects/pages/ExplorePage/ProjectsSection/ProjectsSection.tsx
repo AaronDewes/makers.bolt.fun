@@ -17,6 +17,8 @@ export default function ProjectsSection() {
     const shockTheWebCategory = data.allCategories.find(c => c.id === 11);
     const restCategories = data.allCategories.filter(c => c.id !== 11)
 
+    console.log(data);
+
     return (
         <div className='mt-32 lg:mt-48'>
             <ProjectsRow title={<><span className="align-middle mr-8">Hottest</span> <MdLocalFireDepartment className='inline-block text-fire scale-125 ' /></>}
