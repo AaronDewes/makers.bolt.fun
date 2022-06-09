@@ -21879,6 +21879,7 @@ __metadata:
     marked: ^4.0.16
     msw: ^0.42.1
     netlify-cli: ^10.4.0
+    netlify-plugin-cache: ^1.0.3
     nexus: ^1.3.0
     postcss: ^8.4.14
     prisma: ^3.15.0
@@ -22171,6 +22172,13 @@ __metadata:
     node-fetch: ^2.6.0
     uuid: ^8.3.2
   checksum: ef89d5dfece85068335c5b766fdae4810ac0f0b9d0f4ca6f3caf8c2e6b75ac2120f501f0de09bd5d86c0ca4a76596472151995467d05550eb4e34ca055597fbc
+  languageName: node
+  linkType: hard
+
+"netlify-plugin-cache@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "netlify-plugin-cache@npm:1.0.3"
+  checksum: 967b9b7855711843ec1412a58be703850e46582e1df3e0edf086b5bcc3ac9b358a307eefed4520eafaeeec9011ecd4bf9b2919261454ece4699754653645891e
   languageName: node
   linkType: hard
 
